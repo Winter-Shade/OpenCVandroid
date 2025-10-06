@@ -7,7 +7,7 @@
 using namespace cv;
 
 extern "C" {
-JNIEXPORT void JNICALL Java_com_wintershade_app_MainActivity_FindFeatures(JNIEnv * jniEnv, jobject, jlong addrGray, jlong addrRGBA)
+JNIEXPORT void JNICALL Java_com_wintershade_opencvandroid_MainActivity_FindFeatures(JNIEnv * jniEnv, jobject, jlong addrGray, jlong addrRGBA)
 {
     Mat* mGray = (Mat*)addrGray;
     Mat* mRGBA = (Mat*)addrRGBA;

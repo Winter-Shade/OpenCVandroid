@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "OpenCVandroid"
 include(":app")
- 
+include(":OpenCV")

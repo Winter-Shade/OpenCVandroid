@@ -14,6 +14,17 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                arguments += "-DOpenCV_DIR=/Users/srijanshukla/Downloads/OpenCV-android-sdk/sdk/native/jni"
+                "-DANDROID_TOOLCHAIN=clang"
+                "-DANDROID_STL=c++_shared"
+
+                targets += "app"
+                cppFlags += ""
+
+            }
+        }
     }
 
     buildTypes {
@@ -29,6 +40,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.22.1"
+        }
+    }
+
 }
 
 dependencies {
@@ -37,6 +55,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(project(":OpenCV"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

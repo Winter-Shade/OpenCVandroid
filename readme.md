@@ -2,26 +2,18 @@
 
 A modular Android + C++ + TypeScript project that demonstrates **real-time camera frame processing** using **OpenCV (C++)**, **OpenGL ES rendering**, and a **TypeScript-based web viewer** for visualization and debugging.
 
-
-## 🚀 Project Goal
-
-Build a **minimal Android app** that:
-1. Captures live camera frames.
-2. Sends them to native **C++ (OpenCV)** for processing (e.g., Canny edge detection).
-3. Renders the processed output using **OpenGL ES**.
-4. Exports or mirrors a sample frame to a **web-based viewer** for debugging.
-
 ---
 
 ## 📂 Project Structure
 
-root/
+root/   
 │
-├── app/
-│ ├── src/
-│ │ └── main/
-│ │ ├── cpp/ #Native C++ processing
+├── app/   
+│ ├── src/   
+│ │ └── main/   
+│ │ ├── cpp/ #Native C++ processing   
 │ │ │   └── CMakeLists.txt
+│ │ │   └── opencvandroid.cpp
 │ │ ├── java/
 │ │ │ ├── MainActivity.java # Main Android entry point
 │ │ │ ├── MyGLSurface.java # OpenGL Surface setup
@@ -68,43 +60,48 @@ Follow these steps to integrate **OpenCV** with your Android project:
 Open your `app/build.gradle` file and add:
 
 ```gradle
-implementation project(':opencv')   
- 
-
-
+implementation project(':OpenCV')   
+ ```
 
 
 🌐 Web Viewer Setup
 Step 1: Go to the web directory
+```
 cd web
+```
 
 Step 2: Install dependencies
+```
 npm install
+```
 
 Step 3: Compile TypeScript
+```
 npx tsc
+```
 
 Step 4: Start a local server
 
 Use any local dev server (e.g., Live Server, npx serve, or Python):
 
+```
 npx serve dist
-
+```
 
 Then open http://localhost:3000
 
 Step 5: Add frames
 
 Place your processed image frames in:
-
+```
 web/dist/frames/
-
+```
 
 They’ll automatically be displayed by the viewer with overlay stats:
-
+```
 FPS
 Resolution
-
+```
 
 
 

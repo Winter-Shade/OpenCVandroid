@@ -13,3 +13,29 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+
+# Node.js dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor stuff
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+

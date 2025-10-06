@@ -103,5 +103,9 @@ FPS
 Resolution
 ```
 
+App Screenshots: 
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/1803b60c-656c-43ab-a3ab-1646f88e2c4f" />
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/b3c70d9f-ad15-476f-a00c-91eb132c9e23" />
+
 
 

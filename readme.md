@@ -14,26 +14,26 @@ root/
 │ │ ├── cpp/ #Native C++ processing   
 │ │ │   └── CMakeLists.txt
 │ │ │   └── opencvandroid.cpp
-│ │ ├── java/
-│ │ │ ├── MainActivity.java # Main Android entry point
-│ │ │ ├── MyGLSurface.java # OpenGL Surface setup
-│ │ │ └── MyGLRenderer.java # Custom OpenGL Renderer
-│ │ └── res/ (layouts, drawables)  
-│
-├── web/ 
-│ ├── src/
-│ │ └── index.ts # Loads static frames and overlays FPS, resolution
-│ ├── dist/
-│ ├── index.html
-│ ├── tsconfig.json
-│ ├── package.json
-│ └── README.md (optional)
-│
-└── README.md (this file)
-
----
-
-## ⚙️ Setup Instructions
+│ │ ├── java/   
+│ │ │ ├── MainActivity.java # Main Android entry point   
+│ │ │ ├── MyGLSurface.java # OpenGL Surface setup   
+│ │ │ └── MyGLRenderer.java # Custom OpenGL Renderer   
+│ │ └── res/ (layouts, drawables)     
+│    
+├── web/     
+│ ├── src/    
+│ │ └── index.ts # Loads static frames and overlays FPS, resolution    
+│ ├── dist/   
+│ ├── index.html    
+│ ├── tsconfig.json   
+│ ├── package.json    
+│ └── README.md (optional)     
+│    
+└── README.md (this file)    
+    
+---    
+    
+## ⚙️ Setup Instructions    
 
 ## 🔗 Integration Setup: (OpenCV + Android)
 
@@ -94,7 +94,7 @@ Step 5: Add frames
 
 Place your processed image frames in:
 ```
-web/dist/frames/
+web/frames/
 ```
 
 They’ll automatically be displayed by the viewer with overlay stats:
